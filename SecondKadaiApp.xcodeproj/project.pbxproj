@@ -12,6 +12,7 @@
 		CD2DF70C1D6C928B0059C75C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2DF70A1D6C928B0059C75C /* Main.storyboard */; };
 		CD2DF70E1D6C928B0059C75C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2DF70D1D6C928B0059C75C /* Assets.xcassets */; };
 		CD2DF7111D6C928B0059C75C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2DF70F1D6C928B0059C75C /* LaunchScreen.storyboard */; };
+		CD2DF7191D6C941B0059C75C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2DF7181D6C941B0059C75C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD2DF70D1D6C928B0059C75C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2DF7101D6C928B0059C75C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD2DF7121D6C928B0059C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2DF7181D6C941B0059C75C /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CD2DF7061D6C928B0059C75C /* AppDelegate.swift */,
 				CD2DF7081D6C928B0059C75C /* ViewController.swift */,
 				CD2DF70A1D6C928B0059C75C /* Main.storyboard */,
+				CD2DF7181D6C941B0059C75C /* ResultViewController.swift */,
 				CD2DF70D1D6C928B0059C75C /* Assets.xcassets */,
 				CD2DF70F1D6C928B0059C75C /* LaunchScreen.storyboard */,
 				CD2DF7121D6C928B0059C75C /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2DF7191D6C941B0059C75C /* ResultViewController.swift in Sources */,
 				CD2DF7091D6C928B0059C75C /* ViewController.swift in Sources */,
 				CD2DF7071D6C928B0059C75C /* AppDelegate.swift in Sources */,
 			);

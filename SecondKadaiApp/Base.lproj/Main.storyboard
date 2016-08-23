@@ -1,25 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-oW-Xsg">
+                                <rect key="frame" x="107" y="70" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1xn-Ni-KuF"/>
+                                    <constraint firstAttribute="height" constant="30" id="wm7-Nr-JLP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zES-QF-HUI">
+                                <rect key="frame" x="132" y="150" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="76K-gS-i99"/>
+                                    <constraint firstAttribute="height" constant="30" id="Nne-f7-Isv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-sB-Ids">
+                                <rect key="frame" x="182" y="287" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0eD-jF-isZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="cMO-j1-pol"/>
+                                </constraints>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="dml-vL-CSD" kind="show" id="AnC-Vu-D94"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zES-QF-HUI" firstAttribute="top" secondItem="1G1-oW-Xsg" secondAttribute="bottom" constant="50" id="13H-uH-boW"/>
+                            <constraint firstItem="1G1-oW-Xsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5h-ff-3R4"/>
+                            <constraint firstItem="gmZ-sB-Ids" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="X3V-ed-Qf9"/>
+                            <constraint firstItem="gmZ-sB-Ids" firstAttribute="top" secondItem="zES-QF-HUI" secondAttribute="bottom" constant="107" id="Z3c-74-eLT"/>
+                            <constraint firstItem="zES-QF-HUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcr-pA-Pd1"/>
+                            <constraint firstItem="1G1-oW-Xsg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pb7-b1-drv"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="textField1" destination="zES-QF-HUI" id="fem-Fa-qkq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ETd-Gi-ur0">
+            <objects>
+                <viewController id="dml-vL-CSD" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z6D-cC-Ebs"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ZB-tW-kqB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qo8-Rq-ZV8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-5V-GeT">
+                                <rect key="frame" x="182" y="200" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ojb-nY-ttM"/>
+                                    <constraint firstAttribute="width" constant="50" id="gp4-g1-yR8"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="Ip1-Gk-JRr" kind="unwind" unwindAction="unwind:" id="VyW-3d-s3Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOH-1G-p9W">
+                                <rect key="frame" x="57" y="70" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YnG-Yi-dFa"/>
+                                    <constraint firstAttribute="width" constant="300" id="mKY-H9-c6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QOH-1G-p9W" firstAttribute="centerX" secondItem="qo8-Rq-ZV8" secondAttribute="centerX" id="4NG-CQ-JEC"/>
+                            <constraint firstItem="VVs-5V-GeT" firstAttribute="top" secondItem="QOH-1G-p9W" secondAttribute="bottom" constant="100" id="6o6-3o-lPl"/>
+                            <constraint firstItem="QOH-1G-p9W" firstAttribute="top" secondItem="Z6D-cC-Ebs" secondAttribute="bottom" constant="50" id="R8z-Fd-58i"/>
+                            <constraint firstItem="VVs-5V-GeT" firstAttribute="centerX" secondItem="qo8-Rq-ZV8" secondAttribute="centerX" id="yZ4-hF-9fC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label1" destination="QOH-1G-p9W" id="jEk-Fk-Cgk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOt-bO-AXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ip1-Gk-JRr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="439"/>
         </scene>
     </scenes>
 </document>
