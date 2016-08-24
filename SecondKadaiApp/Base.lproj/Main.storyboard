@@ -27,17 +27,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zES-QF-HUI">
-                                <rect key="frame" x="132" y="150" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="76K-gS-i99"/>
-                                    <constraint firstAttribute="height" constant="30" id="Nne-f7-Isv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-sB-Ids">
-                                <rect key="frame" x="182" y="287" width="46" height="30"/>
+                                <rect key="frame" x="184" y="287" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="0eD-jF-isZ"/>
                                     <constraint firstAttribute="height" constant="30" id="cMO-j1-pol"/>
@@ -47,12 +38,21 @@
                                     <segue destination="dml-vL-CSD" kind="show" id="AnC-Vu-D94"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zES-QF-HUI">
+                                <rect key="frame" x="132" y="150" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="76K-gS-i99"/>
+                                    <constraint firstAttribute="height" constant="30" id="Nne-f7-Isv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zES-QF-HUI" firstAttribute="top" secondItem="1G1-oW-Xsg" secondAttribute="bottom" constant="50" id="13H-uH-boW"/>
                             <constraint firstItem="1G1-oW-Xsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5h-ff-3R4"/>
-                            <constraint firstItem="gmZ-sB-Ids" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="X3V-ed-Qf9"/>
+                            <constraint firstItem="gmZ-sB-Ids" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3V-ed-Qf9"/>
                             <constraint firstItem="gmZ-sB-Ids" firstAttribute="top" secondItem="zES-QF-HUI" secondAttribute="bottom" constant="107" id="Z3c-74-eLT"/>
                             <constraint firstItem="zES-QF-HUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcr-pA-Pd1"/>
                             <constraint firstItem="1G1-oW-Xsg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pb7-b1-drv"/>
